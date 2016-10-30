@@ -1,0 +1,47 @@
+{
+  "name": "haloruns-layout",
+  "version": "0.0.0",
+  "description": "The layout used in HaloRuns races at Twitch.tv/HaloRaces - Developed by Pedrogas - Started: OCT-30-2016",
+  "homepage": "https://github.com/Pedrogas/haloruns-layout",
+  "author": {
+    "name": "Pedrogas",
+    "email": "xxp3drogasxx@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "nodecg",
+    "bundle",
+    "haloruns",
+    "speedrun",
+    "layout",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "~0.8.0",
+    "dashboardPanels": [
+      {
+        "name": "haloruns-panel",
+        "title": "Haloruns Panel",
+        "width": 2,
+        "file": "haloruns-panel.html",
+        "headerColor": "#9f9bbd"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": true
+      }
+    ]
+  },
+  "repository": "Pedrogas/haloruns-layout",
+  "license": "MIT"
+}
