@@ -1,0 +1,93 @@
+.container{
+	width: 1920px;
+	height: 1080px;
+	position: relative;
+}
+.timer{
+	z-index: 3;
+	font-weight:800;
+	text-align:center;
+	position: absolute;
+	color: #ffffff;
+}
+.global{
+	left: 25%;
+	top: 13%;
+	font-size: 86px;
+	width: 24.3%;
+	/*background-color: #00b0ff;*/
+}
+.label{
+	left: 25%;
+	top: 23%;
+	top: 23%;
+	font-size: 60px;
+	width:24.3%;
+	/*background-color: #00b0ff;*/
+}
+.blue{
+	left: 25%;
+	top: 43.9%;
+	font-size: 45px;
+	width: 24.3%;
+}
+.green{
+	left: 25%;
+	top: 36.9%;
+	font-size: 45px;
+	width: 24.3%;
+}
+.red{
+	left: 25%;
+	top: 30%;
+	font-size: 45px;
+	width: 24.3%;
+}
+.runner{
+	z-index: 3;
+	width: 12.6%;
+	height: 3.1%;
+	text-align:center;
+	position: absolute;
+	/*background-color: #00b0ff;*/
+	font-size: 24px;
+}
+.rojo{
+	left: 68.7%;
+	top: 1.1%;
+}
+.verde{
+	left: 68.7%;
+	top: 51.1%;
+}
+.azul{
+	left: 18.7%;
+	top: 51.1%;
+}
+
+.bg{
+	z-index: 2;
+	position: absolute;
+}
+.video{
+	width: 929px;
+	height: 519px;
+	background-color: #7e57c2;
+	position: absolute;
+}
+.gvid{
+	left: 50.78%;
+	top: 50.93%;
+}
+.rvid{
+	left: 50.78%;
+	top: .92%;
+}
+.bvid{
+	left: .79%;
+	top: 50.93%;
+}
+.speaker{
+	position: absolute;
+	z-index: 5;
+}

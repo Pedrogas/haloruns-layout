@@ -1,0 +1,59 @@
+<!--
+ Created by Pedrogas on 30/10/2016.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="col-xs-12">
+			<div style="text-align:center">
+				<label>Set Timer &nbsp;</label>
+				<input type="number" value="0" min="0" id="hr" MAXLENGTH="2" style="width: 50px; text-align:center;"/>
+				&nbsp; <label>:</label> &nbsp;
+				<input type="number" value="0" min="0" max="59" id="min" MAXLENGTH="2" style="width: 50px; text-align:center;"/>
+				&nbsp; <label>:</label> &nbsp;
+				<input type="number" value="0" min="0" max="59" id="sec" MAXLENGTH="2" style="width: 50px; text-align:center;"/>&nbsp;
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-xs-3">
+			<div style="text-align:center"><input type="button" id="btnStart" class="btn btn-default" value="Start"/></div>
+		</div>
+		<div class="col-xs-3">
+			<div style="text-align:center"><input type="button" id="btnStop" class="btn btn-default" value="Stop"/></div>
+		</div>
+		<div class="col-xs-3">
+			<div style="text-align:center"><input type="button" id="btnReset" class="btn btn-default" value="Reset"/></div>
+		</div>
+		<div class="col-xs-3">
+			<div style="text-align:center"><input type="button" id="btnSet" class="btn btn-default" value="Set"/></div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-xs-4">
+			<div style="text-align:center">
+				<button id="getBlue" type="button" class="btn btn-primary">Split Blue</button>
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div style="text-align:center">
+				<button id="getGreen" type="button" class="btn btn-success">Split Green</button>
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div style="text-align:center">
+				<button id="getRed" type="button" class="btn btn-danger">Split Red</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/timer.js"></script>
+</body>
+</html>

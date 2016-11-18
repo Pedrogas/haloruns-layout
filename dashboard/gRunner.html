@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-xs-12">
+				<div style="text-align: center">
+					<div id="rForm" class="input-group">
+						<span class="input-group-addon"><label>Runner's Name</label></span>
+						<input type="text" id="rName" class="form-control">
+					</div>
+					<br>
+					<label>Choose a Streaming Service</label>
+					<br><br>
+					<label class="radio-inline">
+						<label><input type="radio" name="streamS" id="radio1" checked  value="Beam.pro">Beam.pro</label>
+					</label>
+					<label class="radio-inline">
+						<label><input type="radio" name="streamS" id="radio2" value="Twitch.Tv">Twitch.tv</label>
+					</label>
+					<div class="input-group" id="twitchDiv" style="display: none">
+						<span class="input-group-addon"><label>https://www.twitch.tv/</label></span>
+						<input type="text" class="form-control" id="tName" placeholder="USERNAME eg. iPedrogas">
+					</div>
+					<div class="input-group" id="beamDiv">
+						<span class="input-group-addon"><label>https://beam.pro/</label></span>
+						<input type="text" class="form-control" id="bName" placeholder="USERNAME eg. Pedrogas">
+					</div>
+					<br>
+					<button type="button" class="btn btn-warning" id="btnCheck">CHECK</button>
+					<button type="button" class="btn btn-success" id="btnGo" style="display: none">GO LIVE!</button>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="iframeDiv">
+			<br>
+			<div class="col-xs-12">
+				<div style="text-align: center">
+					<script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+					<div id="Player"></div>
+					<script type="text/javascript">
+						var options;
+						var player;
+						var tCreated = 0;
+						nodecg.listenFor("gpreviewTwitch", createTPlayer)
+						nodecg.listenFor("gpreviewBeam", createBPlayer)
+
+						function createTPlayer() {
+							if (tCreated == 0){
+							$("iframe").remove();
+							options = {
+								channel: "{"+twitch+"}",
+
+								//video: "{VIDEO_ID}"
+							};
+							player = new Twitch.Player("Player", options);
+							player.setVolume(0.0);
+							tCreated = 1;
+							}else {
+								player.setChannel(twitch);
+							}
+						}
+
+						function createBPlayer() {
+							$("iframe").remove();
+							tCreated = 0;
+							$("#Player").html("<iframe src='https://beam.pro/embed/player/"+beam+"'></iframe>");
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+		<script src="js/gRunner.js"></script>
+	</body>
+</html>

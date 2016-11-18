@@ -1,7 +1,7 @@
 {
   "name": "haloruns-layout",
   "version": "0.0.0",
-  "description": "The layout used in HaloRuns races at Twitch.tv/HaloRaces - Developed by Pedrogas - Started: OCT-30-2016",
+  "description": "The layout used in HaloRuns Races at Twitch.tv/HaloRaces - Started OCT:31:2016",
   "homepage": "https://github.com/Pedrogas/haloruns-layout",
   "author": {
     "name": "Pedrogas",
@@ -15,33 +15,59 @@
     "extension"
   ],
   "keywords": [
+    "layout",
     "nodecg",
     "bundle",
     "haloruns",
-    "speedrun",
-    "layout",
     "nodecg-bundle"
   ],
   "nodecg": {
     "compatibleRange": "~0.8.0",
     "dashboardPanels": [
       {
-        "name": "haloruns-panel",
-        "title": "Haloruns Panel",
-        "width": 2,
-        "file": "haloruns-panel.html",
-        "headerColor": "#9f9bbd"
+        "name": "timer",
+        "title": "TIMER",
+        "width": 3,
+        "file": "timer.html",
+        "headerColor": "#4975A3"
+      },
+      {
+        "name": "grunner",
+        "title": "Green Runner",
+        "width": 3,
+        "file": "gRunner.html",
+        "headerColor": "#0abe4a"
+      },
+      {
+        "name": "brunner",
+        "title": "Blue Runner",
+        "width": 3,
+        "file": "bRunner.html",
+        "headerColor": "#0A8CC0"
+      },
+      {
+        "name": "rrunner",
+        "title": "Red Runner",
+        "width": 3,
+        "file": "rRunner.html",
+        "headerColor": "#C00A0A"
+      },
+      {
+        "name": "volume",
+        "title": "Display Speaker",
+        "width": 3,
+        "file": "volume.html",
+        "headerColor": "#A50FBF"
       }
     ],
     "graphics": [
       {
         "file": "index.html",
-        "width": 1280,
-        "height": 720,
-        "singleInstance": true
+        "width": 1920,
+        "height": 1080
       }
     ]
   },
-  "repository": "Pedrogas/haloruns-layout",
+  "repository": "https://github.com/nodecg/nodecg.git",
   "license": "MIT"
 }

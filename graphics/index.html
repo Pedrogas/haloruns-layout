@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+		<link rel="stylesheet" href="css/adjust.css">
+		<style>
+			@font-face {
+				font-family: 'Rexlia';
+				src: url('fonts/rexlia.ttf') format('truetype');
+			}
+			body{
+				font-family: 'Rexlia';
+			}
+		</style>
+	</head>
+	<body text="white">
+		<div class="container">
+			<img id="bg" class="bg" src="img/bg.png"/>
+			<img id="rSpeaker" class="speaker" src="img/rSpeaker.png"/>
+			<img id="gSpeaker" class="speaker" src="img/gSpeaker.png"/>
+			<img id="bSpeaker" class="speaker" src="img/bSpeaker.png"/>
+			<div id="timer" class="timer global">00:00:00</div>
+			<div id="Text" class="timer label">Last Level</div>
+			<div id="bSplit" class="timer blue">00:00:00</div>
+			<div id="gSplit" class="timer green">00:00:00</div>
+			<div id="rSplit" class="timer red">00:00:00</div>
+			<div id="bRunner" class="runner azul">Runner's Name</div>
+			<div id="gRunner" class="runner verde">Runner's Name</div>
+			<div id="rRunner" class="runner rojo">Runner's Name</div>
+			<div id="gVideo" class="video gvid">
+				<div id="gPlayer"></div>
+			</div>
+			<div id="rVideo" class="video rvid">
+				<div id="rPlayer"></div>
+			</div>
+			<div id="bVideo" class="video bvid">
+				<div id="bPlayer"></div>
+			</div>
 
-</body>
+		</div>
+		<script src="js/runners.js"></script>
+		<script src="js/volume.js"></script>
+		<script src="js/timer.js"></script>
+	</body>
 </html>
